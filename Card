@@ -1,0 +1,83 @@
+package Test;
+
+public class Card {
+	int no = 0;
+	String no_Card = "";
+	String no_Block = "";
+	int no_Block_Index = 0;
+	String address = "";
+	String call = "";
+
+	
+	 /** Constructor **/
+
+    public Card() {}
+
+    public Card(int no, String no_Card, String no_Block, int no_Block_Index, String address, String call) {
+		super();
+		this.no = no;
+		this.no_Card = no_Card;
+		this.no_Block = no_Block;
+		this.no_Block_Index = no_Block_Index;
+		this.address = address;
+		this.call = call;
+	}
+	/** Getters and Setters **/
+
+	public int getNo() {
+		return no;
+	}
+
+	public void setNo(int no) {
+		this.no = no;
+	}
+
+	public String getNo_Card() {
+		return no_Card;
+	}
+
+	public void setNo_Card(String no_Card) {
+		this.no_Card = no_Card;
+	}
+
+	public String getNo_Block() {
+		return no_Block;
+	}
+
+	public void setNo_Block(String no_Block) {
+		this.no_Block = no_Block;
+	}
+
+	public int getNo_Block_Index() {
+		return no_Block_Index;
+	}
+
+	public void setNo_Block_Index(int no_Block_Index) {
+		this.no_Block_Index = no_Block_Index;
+	}
+
+	public String getAddress() {
+		return address;
+	}
+
+	public void setAddress(String address) {
+		this.address = address;
+	}
+
+	public String getCall() {
+		return call;
+	}
+
+	public void setCall(String call) {
+		this.call = call;
+	}
+
+	@Override
+	public String toString() {
+		return "{\"No\":" + no + ",\"No_Card\":\"" + no_Card + "\",\"No_Block\":\"" + no_Block + "\",\"No_Block_Index\":"
+				+ no_Block_Index + ",\"Address\":\"" + address + "\",\"Call\":\"" + call + "\"}";
+
+	}
+
+    
+}
